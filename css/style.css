@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .work-path__title, .work-path__item--measurements__item-title, .blog-box__title, .blog-box__item-title {
+.menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .work-path__title, .work-path__item-title, .blog-box__title, .blog-box__item-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -375,6 +375,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 5;
   max-width: 694px;
   width: 100%;
   background-color: #ffff;
@@ -733,12 +734,12 @@ body {
   background-color: rgba(54, 56, 56, 0.7);
 }
 
-.work-path__item--measurements__item-title {
+.work-path__item-title {
   margin-left: 13px;
   color: #363838;
 }
 
-.work-path__item--measurements__item-text {
+.work-path__item-text {
   margin-top: 13px;
 }
 
