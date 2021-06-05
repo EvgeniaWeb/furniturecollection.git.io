@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .work-path__title, .work-path__item-title, .blog-box__title, .blog-box__item-title {
+.menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -653,11 +653,11 @@ body {
 }
 
 /* Стили 4 секция work-path */
-.work-path {
+.works-path {
   padding: 80px 0 30px;
 }
 
-.work-path__title {
+.works-path__title {
   text-align: center;
   color: #363838;
   margin-bottom: 40px;
@@ -665,7 +665,7 @@ body {
   line-height: 51px;
 }
 
-.work-path__items-box {
+.works-path__items-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,7 +676,7 @@ body {
   position: relative;
 }
 
-.work-path__items-box::after {
+.works-path__items-box::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -687,7 +687,7 @@ body {
   background-color: #363838;
 }
 
-.work-path__item {
+.works-path__item {
   width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,11 +701,11 @@ body {
   height: 100%;
 }
 
-.work-path__item--production {
+.works-path__item--production {
   margin-left: 317px;
 }
 
-.work-path__item--production::after {
+.works-path__item--production::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -715,16 +715,16 @@ body {
   background-color: rgba(54, 56, 56, 0.7);
 }
 
-.work-path__item--production, .work-path__item--consultation {
+.works-path__item--production, .works-path__item--consultation {
   padding-bottom: 38px;
 }
 
-.work-path__item--measurements {
+.works-path__item--measurements {
   padding-top: 38px;
   margin-left: 305px;
 }
 
-.work-path__item--measurements::after {
+.works-path__item--measurements::after {
   content: '';
   position: absolute;
   top: 0;
@@ -734,12 +734,12 @@ body {
   background-color: rgba(54, 56, 56, 0.7);
 }
 
-.work-path__item-title {
+.works-path__item-title {
   margin-left: 13px;
   color: #363838;
 }
 
-.work-path__item-text {
+.works-path__item-text {
   margin-top: 13px;
 }
 
