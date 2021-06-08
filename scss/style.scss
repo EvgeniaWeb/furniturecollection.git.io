@@ -36,7 +36,20 @@
 		@extend %title-font;
 		color: rgba(54, 56, 56, 0.9);
 		line-height: 22px;
-
+	}
+	&__list-link--active{
+		padding-bottom: 4px;
+		position: relative;
+		&::after{
+			content: '';
+         position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			border-radius: 1px;
+			background-color: rgba($title, .7);
+		}
 	}
 } 
 
@@ -237,7 +250,27 @@
 	}
 }
 
-
+/* Хлебные крошки */
+.breadcrumbs {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 14px;
+	&__list{
+		display: flex;
+	}
+	&__item::after{
+		content: '/';
+		margin-left: -4px;
+		margin-right: 4px;
+	}
+	&__item:last-child::after{
+		display: none;
+	}
+	&__link{
+		font-size: 14px;
+		color: $default;
+	}
+}
+/* Стили главной страницы */
 /* Стили 1 скции слайдер */
 .top {
 	&__inner{
@@ -245,7 +278,7 @@
 		position: relative;
 		&::after{
 			content: '';
-			background-image: url(../images/slider-bg.jpg);
+			background-image: url(../images/main_slider.jpg);
 			position: absolute;
 			width: 100%;
 			height: 722px;
@@ -296,7 +329,7 @@
 /* Стили 2 скции new-collection */
 .new-collection {
 	text-align: center;
-	padding: 45px 0 105px;
+	padding: 45px 0 35px;
 	&__title{
 		@extend %title-font;
 		color: $title;
@@ -327,6 +360,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 30px;
+	padding-bottom: 70px;
 	&__item{
 		position: relative;
 		&:hover{ /* Принаведении на блок активна ссылка и затемнение */
@@ -561,4 +595,73 @@
 		line-height: 38px;
 		@extend %title-font;
 	}
+}
+
+/* Стили страницы о нас */
+.about {
+	&__prev{
+		background-image: url(../images/about-bg.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		text-align: center;
+		padding: 160px 0;
+		margin-top: -53px;
+	}
+	&__prev-title{
+		color: $title;
+		@extend %title-font;
+		font-size: 60px;
+		line-height: 80px;
+	}
+	&__content{
+		padding: 130px 0 40px;
+	}
+	&__title{
+      color: $title;
+		@extend %title-font;
+		font-size: 36px;
+		line-height: 60px;
+		padding-bottom: 22px;
+		margin-bottom: 22px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			height: 1px;
+			background-color: #6D7278;
+		}
+	}
+	&__text{
+		padding-left: 284px;
+		p{			  
+		   margin-bottom: 30px;
+		}
+	}
+	&__popup{
+		background-image: url(../images/popup-bg.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+		min-height: 414px;
+		display: flex;
+	}
+}
+
+.partners {
+	padding: 16px 0 60px;
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		margin-top: 20px;
+	}
+	&__item{
+		margin: 0 auto;
+	}
+
 }
